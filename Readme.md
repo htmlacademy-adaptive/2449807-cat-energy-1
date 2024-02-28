@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Игорь Тимохин](https://up.htmlacademy.ru/adaptive-individual/1/user/2449807).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина](https://github.com/vikitina).
 
 ---
 
