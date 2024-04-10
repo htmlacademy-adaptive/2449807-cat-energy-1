@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="shortcut icon" type="image/png" sizes="16x16" href="./img/icons/fav-16.png">
   <link rel="stylesheet" href="./css/style.css" class="styles">
@@ -11,7 +12,9 @@
 <body class="body">
   <header class="header">
     <a href="#" class="header__link">
-      <span class="visually-hidden">Логотип сайта</span>
+      <picture>
+        <img class="header__logo" src="./img/icons/logo-mobile.svg" alt="Логотип сайта">
+      </picture>
     </a>
     <nav class="nav">
       <ul class="nav__menu menu">
@@ -32,11 +35,15 @@
   </header>
   <main class="main">
     <section class="main__welcome-block welcome">
-      <h1 class="welcome__title">Функциональное
-        питание для котов</h1>
-      <p class="welcome__text">
-        Занялся собой? Займись котом!
-      </p>
+      <div class="welcome__wrapper">
+        <div class="welcome__container">
+          <h1 class="welcome__title">Функциональное
+            питание для котов</h1>
+          <p class="welcome__text">
+            Занялся собой? Займись котом!
+          </p>
+        </div>
+      </div>
       <a href="#" class="welcome__link">подобрать программу</a>
     </section>
     <section class="main__product-selection product">
@@ -87,20 +94,22 @@
           обычный корм на Cat Energy Slim. Отличный результат
           без изнуряющих тренировок! При этом он не менял своих
           привычек и по-прежнему спит по 16 часов в день. </p>
-        <dl class="statistic">
-          <div class="statistic__block">
-            <dt class="statistic__title">5 кг</dt>
-            <dd class="statistic__description">снижение веса</dd>
-          </div>
-          <div class="statistic__block">
-            <dt class="statistic__title">60 дней</dt>
-            <dd class="statistic__description">затрачено времени</dd>
-          </div>
-        </dl>
-        <p class="description__total">
-          <span class="total__category">затраты на питание:</span>
-          <span class="total__sum">15 000 руб.</span>
-        </p>
+        <div class="description__block">
+          <dl class="statistic">
+            <div class="statistic__block">
+              <dt class="statistic__title">5 кг</dt>
+              <dd class="statistic__description">снижение веса</dd>
+            </div>
+            <div class="statistic__block">
+              <dt class="statistic__title">60 дней</dt>
+              <dd class="statistic__description">затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="description__total">
+            <span class="total__category">затраты на питание:</span>
+            <span class="total__sum">15 000 руб.</span>
+          </p>
+        </div>
       </div>
       <div class="example__block slider">
         <ul class="slider__list">
@@ -126,8 +135,9 @@
           <span class="location__address">Санкт-Петербург</span>
         </address>
       </div>
-      <div class="location__map">
-        <div class="map__google"><iframe
+      <div class="location__map map">
+        <div class="map__google">
+          <iframe class="map__iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198161!2d30.320472477341305!3d59.9387191620936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1709993923032!5m2!1sru!2sua"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>

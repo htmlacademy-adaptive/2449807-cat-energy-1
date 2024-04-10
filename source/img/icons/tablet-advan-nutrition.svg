@@ -1,0 +1,18 @@
+<svg width="80.000000" height="80.000000" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2403_796">
+			<rect id="icon_leaf" width="30.000000" height="32.000000" transform="translate(24.000000 25.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="green back_1" width="80.000000" height="80.000000" fill="#68B738" fill-opacity="1.000000"/>
+	<rect id="icon_leaf" width="30.000000" height="32.000000" transform="translate(24.000000 25.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip2403_796)">
+		<path id="Vector" d="M632.43 162.99L656.81 162.99L656.81 180.99L643.68 180.99" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M636.18 180.99L632.43 180.99L632.43 166.99" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M643.68 181L636.18 187L636.18 181" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M51.77 27.76C51.67 27.31 51.29 27 50.86 27C50.86 27 50.86 27 50.85 27C45.92 27.03 33.91 27.91 29.06 35.38C26.54 39.25 26.33 44.29 28.42 50.34C28.43 50.39 28.47 50.42 28.49 50.46C27.74 52.43 27.45 53.75 27.44 53.79C27.33 54.33 27.66 54.86 28.16 54.97C28.23 54.99 28.29 55 28.36 55C28.79 55 29.18 54.67 29.28 54.21C29.3 54.1 31.68 43.83 40.13 37.83C40.56 37.52 40.68 36.9 40.39 36.44C40.1 35.98 39.52 35.86 39.09 36.16C34.3 39.57 31.35 44.17 29.62 47.82C28.38 43.24 28.7 39.44 30.6 36.51C34.35 30.75 43.23 29.36 48.58 29.07C47.43 30.87 46.17 34.17 46.17 40C46.17 43.12 45.34 45.52 43.71 47.14C41.09 49.73 36.83 49.97 33.71 49.72C33.2 49.67 32.75 50.09 32.71 50.64C32.67 51.19 33.06 51.67 33.57 51.71C34.19 51.76 34.86 51.8 35.55 51.8C38.72 51.8 42.42 51.13 44.98 48.6C47.02 46.59 48.05 43.7 48.05 40C48.05 30.9 51.26 28.9 51.28 28.89C51.67 28.68 51.87 28.21 51.77 27.76Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

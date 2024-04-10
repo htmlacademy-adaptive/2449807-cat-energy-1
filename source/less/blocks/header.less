@@ -1,19 +1,27 @@
 .header {
-  width: 320px;
   background-image: url("../img/icons/logo-header.svg");
   background-repeat: no-repeat;
-  background-position: top 23px left 109px;
-  padding-top: 13px;
+  background-position: center top 23px;
+  padding-top: 65px;
   box-sizing: border-box;
-  display: flex;
   position: relative;
-  padding-bottom: 14px;
 }
+
 .header__link {
+  content: "";
+  position: absolute;
   display: block;
   width: 33px;
   height: 38px;
-  background-image: url("../../img/icons/logo-mobile.svg");
-  margin-right: 222px;
-  margin-left: 20px;
+  left: 20px;
+  top: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    background: none;
+    padding-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+  }
 }

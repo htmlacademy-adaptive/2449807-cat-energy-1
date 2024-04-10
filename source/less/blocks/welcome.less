@@ -1,22 +1,45 @@
 .welcome {
-  background-image: url("../img/green-cat-background.jpeg");
-  background-repeat: no-repeat;
   margin-bottom: 20px;
 }
 
+.welcome__container {
+  background: #63a73a url("../img/green-cat-background.jpeg") no-repeat center;
+  background-size: auto 100%;
+  padding-bottom: 163px;
+  margin-bottom: 138px;
+  padding-top: 27px;
+}
+
+.welcome__wrapper {
+  position: relative;
+}
+
+.welcome__wrapper::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/product-cat-energy.svg");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 270px;
+  top: 167px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .welcome__title {
-  margin: 0 20px;
+  margin: 0 auto;
   text-align: center;
   color: #ffffff;
   font-family: "Oswaldregular", Arial, san-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  padding: 27px 0 26px 0;
+  padding-bottom: 26px;
+  width: 320px;
 }
 
 .welcome__text {
-  margin: 0 20px;
+  margin: 0 auto;
   text-align: center;
   color: #ffffff;
   font-family: "Oswaldregular", Arial, san-serif;
@@ -24,19 +47,9 @@
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
-  padding-bottom: 301px;
-  position: relative;
+  width: 320px;
 }
-.welcome__text::after {
-  content: "";
-  position: absolute;
-  background-image: url("../../img/product-cat-energy.svg");
-  background-repeat: no-repeat;
-  width: 280px;
-  height: 270px;
-  top: 42px;
-  left: 0;
-}
+
 .welcome__link {
   border: none;
   background-color: #68b738;
@@ -50,9 +63,65 @@
   line-height: 14px;
   letter-spacing: 0.077em;
   text-transform: uppercase;
-  width: 280px;
-  height: 40px;
+  min-height: 40px;
   box-sizing: border-box;
   margin: 0 20px;
   padding: 13px 44px 12px 44px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome {
+    padding-bottom: 506px;
+  }
+
+  .welcome__container {
+    background: none;
+    margin-left: 120px;
+    padding-top: 61px;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+  }
+
+  .welcome__wrapper {
+    position: relative;
+  }
+
+  .welcome__wrapper::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/tablet-cat-energy-product.jpeg");
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+    top: 262px;
+  }
+
+  .welcome__title {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    width: 416px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 40px;
+  }
+
+  .welcome__text {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .welcome__link {
+    width: 244px;
+    margin-left: 120px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0;
+    padding: 15px 15px 13px 15px;
+  }
 }

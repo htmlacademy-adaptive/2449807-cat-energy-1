@@ -1,7 +1,6 @@
 .contacts {
   margin: 0 20px;
-  padding: 20px 0;
-  margin-bottom: 20px;
+  padding: 16px 0;
 }
 
 .contacts__logo {
@@ -19,6 +18,7 @@
   border-bottom: 1px solid #d9d9d9;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 0 74px;
   gap: 24px;
   margin: 0;
@@ -78,4 +78,90 @@
 .contacts__academy-link--pic {
   width: 27px;
   background-image: url("../img/icons/academy-footer-pic.svg");
+}
+
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    margin: 0 30px;
+    padding: 52px 0 55px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__logo {
+    display: block;
+    width: 128px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    margin-top: 7px;
+  }
+
+  .contacts__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 24px;
+    margin: 0;
+    border: none;
+    margin-top: 8px;
+    margin-left: 41px;
+  }
+
+  .contacts__item {
+    width: 28px;
+    height: 22px;
+    padding: 0;
+  }
+
+  .contacts__link {
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-repeat: no-repeat;
+  }
+
+  .contacts__link--vk {
+    background-image: url("../img/icons/vk-contacts.svg");
+
+  }
+
+  .contacts__link--youtube {
+    background-image: url("../img/icons/youtube-contacts.svg");
+  }
+
+  .contacts__link--telegram {
+    background-image: url("../img/icons/telegram-contacts.svg");
+  }
+
+  .contacts__academy {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__academy-item {
+    padding: 0;
+  }
+
+  .contacts__academy-link {
+    background-repeat: no-repeat;
+    height: 34px;
+    display: block;
+  }
+
+  .contacts__academy-link--letter {
+    display: none;
+  }
+
+  .contacts__academy-link--pic {
+    width: 168px;
+    background-image: url("../img/icons/tablet-academy-footer-pic.svg");
+  }
 }
