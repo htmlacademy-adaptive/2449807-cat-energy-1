@@ -17,10 +17,13 @@
   margin: 0 20px;
   padding: 0;
 }
+
 .advantages__item {
   padding-left: 79px;
   padding-bottom: 14px;
+  min-height: 60px;
 }
+
 .advantages__text {
   margin: 0;
   color: #444444;
@@ -54,4 +57,80 @@
   background-repeat: no-repeat;
   background-position: center left;
   background-image: url("../img/icons/advan-time.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    margin: 0;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 6px;
+  }
+
+  .advantages__title {
+    margin: 0 30px 72px;
+    padding-top: 15px;
+    color: #000000;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  .advantages__list {
+    margin: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px 135px;
+  }
+
+  .advantages__item {
+    width: 249px;
+    min-height: 280px;
+    padding: 0;
+  }
+
+  .advantages__text {
+    padding-top: 111px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 50px;
+    position: relative;
+  }
+
+  .advantages__text::after {
+    position: absolute;
+    content: "1";
+    color: #f2f2f2;
+    font-family: "Oswaldregular", Arial, san-serif;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    top: -40px;
+    right: 25px;
+    z-index: -1;
+  }
+
+  .advantages__item--nutrition {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-image: url("../img/icons/tablet-advan-nutrition.svg");
+  }
+
+  .advantages__item--powder {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-image: url("../img/icons/tablet-advan-powder.svg");
+  }
+
+  .advantages__item--reception {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-image: url("../img/icons/tablet-advan-reception.svg");
+  }
+
+  .advantages__item--time {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-image: url("../img/icons/tablet-advan-time.svg");
+  }
 }
