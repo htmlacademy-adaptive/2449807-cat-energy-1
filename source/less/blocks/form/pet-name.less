@@ -1,0 +1,28 @@
+.pet-name {}
+
+.pet-name__list {
+  padding-bottom: 23px;
+}
+
+.pet-name__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .pet-name__list {
+    padding-bottom: 72px;
+  }
+
+  .pet-name__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pet-name__list {
+    width: 570px;
+    padding-left: 110px;
+    padding-right: 10px;
+    padding-bottom: 0;
+  }
+}
