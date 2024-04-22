@@ -1,0 +1,75 @@
+.gift {
+  margin: 34px 20px;
+  background-image: url("../img/cat-gift-mob.jpeg");
+  background-color: rgba(104, 183, 56, 0.85);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 280px;
+  height: 290px;
+}
+
+.gift__text {
+  color: #ffffff;
+  font-family: @lato-r;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  display: block;
+  margin: 0 58px;
+  padding: 187px 0 0 0;
+  background-image: url("../img/icons/icon-gift-mob.svg");
+  background-position: top 59px center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .gift {
+    margin: 70px 30px 75px 30px;
+    background-image: url("../img/cat-gift-tab.jpeg");
+    background-color: rgba(104, 183, 56, 0.85);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 707px;
+    height: auto;
+  }
+
+  .gift__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 71px 116px 69px 422px;
+    background-image: url("../img/icons/icon-gift-mob.svg");
+    background-size: 80px 82.57px;
+    background-position: top 57px left 78px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift {
+    margin: 0;
+    background-image: url("../img/cat-gift-desk.jpeg");
+    background-color: rgba(104, 183, 56, 0.85);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 0;
+    width: 245px;
+    height: auto;
+  }
+
+  .gift__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 186px 27px 0 27px;
+    background-image: url("../img/icons/icon-gift-mob.svg");
+    background-size: 80px 82.57px;
+    background-position: top 57px left 84px;
+    background-repeat: no-repeat;
+  }
+}

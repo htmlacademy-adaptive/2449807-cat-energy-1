@@ -10,6 +10,10 @@
   text-align: center;
 }
 
+.sending__link {
+  padding: 0 78px;
+}
+
 @media (min-width: @tablet-width) {
   .sending {
     display: flex;
@@ -26,5 +30,17 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
+  }
+  .sending__link {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sending {
+    gap: 77px;
+    margin: 0 auto;
+    margin-bottom: 79px;
+    width: 1220px;
   }
 }

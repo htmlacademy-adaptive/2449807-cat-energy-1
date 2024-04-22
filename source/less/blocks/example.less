@@ -119,11 +119,7 @@
 
   .statistic__block {
     padding: 0;
-    width: 160px;
-    border-top: 1px solid #cdcdcd;
-    border-left: 1px solid #cdcdcd;
-    border-right: 1px solid #cdcdcd;
-    border-radius: 3px;
+    width: 162px;
   }
 
   .statistic__title {
@@ -131,7 +127,9 @@
     font-weight: 400;
     line-height: 37px;
     padding-top: 15px;
-    padding-bottom: 11px;
+    padding-bottom: 18px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
   }
 
   .statistic__description {
@@ -141,7 +139,13 @@
     line-height: 14px;
     padding: 0;
     display: block;
-    width: auto;
+    margin: 0 auto;
+    margin-top: -8px;
+    background-color: #ffffff;
+    width: 114px;
+  }
+  .statistic__description--time {
+    width: 142px;
   }
 
   .description__total {
@@ -152,5 +156,77 @@
     width: 175px;
     text-align: right;
     padding-top: 8px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    background-image: linear-gradient(#ffffff 159px, #eaeaea 102px);
+    padding-top: 23px;
+    margin: 0;
+  }
+  .example__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+  }
+  .example__title {
+    padding: 0;
+    margin: 0 auto;
+    width: 1220px;
+    padding-bottom: 146px;
+  }
+
+  .description {
+    margin: 0;
+    width: 433px;
+  }
+
+  .description__text {
+    margin-bottom: 69px;
+  }
+
+  .description__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .statistic {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    gap: 42px;
+    margin-bottom: 43px;
+  }
+
+  .statistic__block {
+    padding: 0;
+  }
+
+  .statistic__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+  }
+
+  .statistic__description {
+    background-color: #eaeaea;
+    margin: 0 auto;
+    margin-top: -8px;
+    width: 114px;
+  }
+  .statistic__description--time {
+    width: 142px;
+  }
+  .description__total {
+    width: auto;
+    display: flex;
+    gap: 66px;
   }
 }
