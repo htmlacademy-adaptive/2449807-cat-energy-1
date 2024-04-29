@@ -11,6 +11,7 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-top: 14px;
+  position: relative;
 }
 
 .text-input__input {
@@ -25,6 +26,20 @@
   height: 45px;
   padding: 14px 15px 13px 15px;
   box-sizing: border-box;
+
+}
+
+.text-input__input:hover {
+  border-color: #cdcdcd;
+}
+
+.text-input__input:focus {
+  border-color: #444444;
+  outline-color: #444444;
+}
+
+.text-input__input:invalid {
+  border: 2px solid #ff8282;
 }
 
 @media (min-width: @tablet-width) {
@@ -47,7 +62,7 @@
     line-height: 30px;
     border: 1px solid #e7e7e7;
     height: 52px;
-    padding: 14px 19px 13px 19px;
+    padding: 14px 19px 13px 21px;
     box-sizing: border-box;
   }
 }

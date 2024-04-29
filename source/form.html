@@ -11,7 +11,7 @@
 
 <body class="body">
   <header class="header">
-    <a href="#" class="header__link">
+    <a href="index.html" class="header__link">
       <picture>
         <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)">
         <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
@@ -21,13 +21,13 @@
     <nav class="nav">
       <ul class="nav__menu menu">
         <li class="menu__item">
-          <a href="index.html" class="menu__link">главная</a>
+          <a href="index.html" class="menu__link menu__link--dark">главная</a>
         </li>
         <li class="menu__item">
-          <a href="catalog.html" class="menu__link">каталог продукции</a>
+          <a href="catalog.html" class="menu__link menu__link--dark">каталог продукции</a>
         </li>
         <li class="menu__item">
-          <a href="form.html" class="menu__link">подбор программы</a>
+          <a href="form.html" class="menu__link menu__link--dark">подбор программы</a>
         </li>
       </ul>
       <button class="nav__toggle" type="button">
@@ -37,13 +37,13 @@
   </header>
   <main class="main form">
     <h1 class="inner-title form__title">Подбор программы</h1>
-    <div class="form__text--desktop">
-      <p class="inner-text form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <div class="form__text form__text--desktop">
+      <p class="inner-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
     <form class="order" action="https://echo.htmlacademy.ru/" method="post">
       <div class="order--container">
         <fieldset class="order__group pet-name">
-          <legend class="order__title visually-hidden">Введите данные питомца</legend>
+          <legend class="special-title visually-hidden">Введите данные питомца</legend>
           <ul class="order__list pet-name__list">
             <li class="pet-name__item text-input">
               <label for="pet-name" class="text-input__label">ИМЯ:*</label>
@@ -60,7 +60,7 @@
           </ul>
         </fieldset>
         <fieldset class="order__group check-product">
-          <legend class="order__title visually-hidden">Тип продукции</legend>
+          <legend class="special-title visually-hidden">Тип продукции</legend>
           <ul class="order__list check-product__list">
             <li class="check-product__item radio">
               <input id="loss" name="type-product" value="loss-weight" type="radio" class="radio__input visually-hidden"
@@ -80,8 +80,8 @@
         </fieldset>
       </div>
       <fieldset class="order__group contact-data">
-        <legend class="order__title contact-data__title">
-          <span class="contact-data__title--pad">Контактные данные (владельца кота)</span>
+        <legend class="special-title contact-data__title">
+          <span class="contact-data__title-pad">Контактные данные (владельца кота)</span>
         </legend>
         <ul class="order__list contact-data__list">
           <li class="contact-data__item text-input">
@@ -95,8 +95,8 @@
         </ul>
       </fieldset>
       <fieldset class="order__group comment">
-        <legend class="comment__title order__title">
-          <span class="comment__title--pad">Комментарий</span>
+        <legend class="comment__title special-title">
+          <span class="comment__title-pad">Комментарий</span>
         </legend>
         <label for="note" class="text-input__label">
           <span class="visually-hidden">Оставте комментарий</span>
@@ -105,8 +105,8 @@
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="order__group additionally">
-        <legend class="order__title additionally__title">
-          <span class="additionally__title--pad">Дополнительно</span>
+        <legend class="special-title additionally__title">
+          <span class="additionally__title-pad">Дополнительно</span>
         </legend>
         <ul class="order__list additionally__list">
           <li class="additionally__item checkbox">
@@ -129,7 +129,7 @@
         </ul>
       </fieldset>
       <fieldset class="order__group sending">
-        <legend class="order__title sending__title visually-hidden">
+        <legend class="special-title sending__title visually-hidden">
           <span class="visually-hidden">Отправка заявки</span>
         </legend>
         <button href="https://echo.htmlacademy.ru/" class="sending__link button-link">отправить заявку</button>

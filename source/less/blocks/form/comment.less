@@ -4,7 +4,11 @@
   padding: 24px 0 38px 0;
 }
 
-.comment__title--pad {
+.comment__title::after {
+  top: 39px;
+}
+
+.comment__title-pad {
   background-color: #ffffff;
   padding-left: 20px;
   width: 141px;
@@ -25,7 +29,11 @@
     padding: 65px 0 83px 30px;
   }
 
-  .comment__title--pad {
+  .comment__title::after {
+    top: 87px;
+  }
+
+  .comment__title-pad {
     width: 222px;
     height: 40px;
     padding-left: 40px;
@@ -41,13 +49,17 @@
 
 @media (min-width: @desktop-width) {
   .comment__title {
-    padding: 50px 0 74px 30px;
+    padding: 50px 0 74px 70px;
   }
 
-  .comment__title--pad {
+  .comment__title::after {
+    top: 72px;
+  }
+
+  .comment__title-pad {
     width: 222px;
     height: 40px;
-    padding-left: 80px;
+    padding-left: 40px;
   }
 
   .comment__input {

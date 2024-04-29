@@ -2,7 +2,11 @@
   padding: 19px 0 6px 0;
 }
 
-.additionally__title--pad {
+.additionally__title::after {
+  top: 34px;
+}
+
+.additionally__title-pad {
   background-color: #ffffff;
   width: 161px;
   height: 52px;
@@ -21,7 +25,11 @@
     padding: 60px 0 37px 30px;
   }
 
-  .additionally__title--pad {
+  .additionally__title::after {
+    top: 81px;
+  }
+
+  .additionally__title-pad {
     width: 252px;
     height: 52px;
     padding-left: 40px;
@@ -31,7 +39,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 17px 76px;
-    margin: 0 70px;
+    width: 629px;
+    margin: 0 auto;
     margin-bottom: 40px;
     padding: 0;
   }
@@ -45,8 +54,11 @@
   .additionally__title {
     padding: 70px 0 38px 70px;
   }
+  .additionally__title::after {
+    top: 93px;
+  }
 
-  .additionally__title--pad {
+  .additionally__title-pad {
     width: 252px;
     height: 52px;
     padding-left: 40px;

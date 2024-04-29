@@ -39,25 +39,19 @@
 }
 
 .checkbox__input:checked+.checkbox-label::before {
-  border: 1px solid #000000;
+  border: 1px solid #cdcdcd;
 }
 
 .checkbox__input:checked+.checkbox-label::after {
   display: block;
 }
 
-.checkbox-label:hover {
-  opacity: 0.6;
+.checkbox__input:hover+.checkbox-label::before {
+  border: 1px solid #bababa;
 }
-
 .checkbox__input:focus+.checkbox-label::before {
-  outline: 1px solid #af4fff;
+  border: 1px solid #bababa;
 }
-
-.checkbox-label:active {
-  opacity: 0.3;
-}
-
 .checkbox__input:disabled+.checkbox-label {
   opacity: 0.3;
 }

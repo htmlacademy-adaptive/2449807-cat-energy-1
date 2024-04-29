@@ -1,0 +1,43 @@
+.special-title {
+  color: #000000;
+  font-family: @oswald-r;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  position: relative;
+  width: 100%;
+}
+
+.special-title::after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #68b738;
+  width: 100%;
+  top: 42px;
+  right: 0;
+  z-index: -1;
+}
+
+@media (min-width: @tablet-width) {
+  .special-title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    padding-left: 30px;
+    box-sizing: border-box;
+  }
+
+  .special-title::after {
+    top: 87px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .special-title {
+    padding: 0;
+  }
+
+  .special-title::after {
+    top: 92px;
+  }
+}

@@ -1,0 +1,41 @@
+.map {
+  position: relative;
+}
+
+.map__iframe {
+  width: 100%;
+  height: 362px;
+}
+
+.map__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -5;
+}
+
+@media (min-width: @tablet-width) {
+  .map__iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+  }
+
+  .map__google {
+    height: 100%;
+  }
+
+  .map__iframe {
+    height: 100%;
+  }
+}
