@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="shortcut icon" type="image/png" sizes="16x16" href="./img/icons/fav-16.png">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="./img/icons/fav-32.png">
+  <link rel="apple-touch-icon" href="./img/icons/fav-180.png" sizes="180x180" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.css" class="styles">
 </head>
 
@@ -45,7 +48,8 @@
               <source srcset="./img/catalog-card/chick500-desk.png" media="(min-width: 1440px)" width="169"
                 height="210">
               <source srcset="./img/catalog-card/chick500-tab.png" media="(min-width: 768px)" width="200" height="210">
-              <img src="./img/catalog-card/chick500-mob.png" alt="курица" width="140" height="107">
+              <img src="./img/catalog-card/chick500-mob.png" alt="курица" width="140" height="107" class="normal">
+              <img src="./img/catalog-card/chick500-mob-x2.png" alt="курица" width="140" height="107" class="retina">
             </picture>
           </div>
           <div class="card__info">
@@ -75,7 +79,8 @@
               <source srcset="./img/catalog-card/chick1000-desk.png" media="(min-width: 1440px)" width="169"
                 height="210">
               <source srcset="./img/catalog-card/chick1000-tab.png" media="(min-width: 768px)" width="200" height="210">
-              <img src="./img/catalog-card/chick1000-mob.png" alt="курица" width="140" height="107">
+              <img src="./img/catalog-card/chick1000-mob.png" alt="курица" width="140" height="107" class="normal">
+              <img src="./img/catalog-card/chick1000-mob-x2.png" alt="курица" width="140" height="107" class="retina">
             </picture>
           </div>
           <div class="card__info">
@@ -103,7 +108,8 @@
             <picture>
               <source srcset="./img/catalog-card/fish500-desk.png" media="(min-width: 1440px)" width="169" height="210">
               <source srcset="./img/catalog-card/fish500-tab.png" media="(min-width: 768px)" width="200" height="210">
-              <img src="./img/catalog-card/fish500-mob.png" alt="рыба" width="140" height="107">
+              <img src="./img/catalog-card/fish500-mob.png" alt="рыба" width="140" height="107" class="normal">
+              <img src="./img/catalog-card/fish500-mob-x2.png" alt="рыба" width="140" height="107" class="retina">
             </picture>
           </div>
           <div class="card__info">
@@ -132,7 +138,8 @@
               <source srcset="./img/catalog-card/fish1000-desk.png" media="(min-width: 1440px)" width="169"
                 height="210">
               <source srcset="./img/catalog-card/fish1000-tab.png" media="(min-width: 768px)" width="200" height="210">
-              <img src="./img/catalog-card/fish1000-mob.png" alt="рыба" width="140" height="107">
+              <img src="./img/catalog-card/fish1000-mob.png" alt="рыба" width="140" height="107" class="normal">
+              <img src="./img/catalog-card/fish1000-mob-x2.png" alt="рыба" width="140" height="107" class="retina">
             </picture>
           </div>
           <div class="card__info">
@@ -162,7 +169,8 @@
                 height="210">
               <source srcset="./img/catalog-card/buckwheat500-tab.png" media="(min-width: 768px)" width="200"
                 height="210">
-              <img src="./img/catalog-card/buckwheat500-mob.png" alt="гречка" width="140" height="107">
+              <img src="./img/catalog-card/buckwheat500-mob.png" alt="гречка" width="140" height="107" class="normal">
+              <img src="./img/catalog-card/buckwheat500-mob-x2.png" alt="гречка" width="140" height="107" class="retina">
             </picture>
           </div>
           <div class="card__info">
@@ -192,7 +200,8 @@
                 height="210">
               <source srcset="./img/catalog-card/buckwheat1000-tab.png" media="(min-width: 768px)" width="200"
                 height="210">
-              <img src="./img/catalog-card/buckwheat1000-mob.png" alt="гречка" width="140" height="107">
+              <img src="./img/catalog-card/buckwheat1000-mob.png" alt="гречка" width="140" height="107" class="normal">
+              <img src="./img/catalog-card/buckwheat1000-mob-x2.png" alt="гречка" width="140" height="107" class="retina">
             </picture>
           </div>
           <div class="card__info">
@@ -220,7 +229,8 @@
             <picture>
               <source srcset="./img/catalog-card/rice500-desk.png" media="(min-width: 1440px)" width="169" height="210">
               <source srcset="./img/catalog-card/rice500-tab.png" media="(min-width: 768px)" width="200" height="210">
-              <img src="./img/catalog-card/rice500-mob.png" alt="рис" width="140" height="107">
+              <img src="./img/catalog-card/rice500-mob.png" alt="рис" width="140" height="107" class="normal">
+              <img src="./img/catalog-card/rice500-mob-x2.png" alt="рис" width="140" height="107" class="retina">
             </picture>
           </div>
           <div class="card__info">
@@ -254,7 +264,9 @@
     </section>
     <section class="catalog__extend extend">
       <h1 class="extend__title special-title">
-        <span class="extend__title--pad">Дополнительные товары</span>
+        <span class="special-title__block">
+        <span class="special-title__text">Дополнительные товары</span>
+      </span>
       </h1>
       <div class="extend__block">
         <ul class="catalog__list catalog__list--extend">
@@ -317,6 +329,13 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198161!2d30.320472477341305!3d59.9387191620936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1709993923032!5m2!1sru!2sua"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map__image">
+          <picture>
+            <source srcset="./img/map-desktop.jpg" media="(min-width: 1440px)" width="1440" height="400">
+            <source srcset="./img/map-tablet.jpg" media="(min-width: 768px)" width="768" height="400">
+            <img class="map__image-pic" src="./img/map-mobile.jpg" alt="карта" width="320" height="362">
+          </picture>
         </div>
       </div>
     </section>

@@ -5,6 +5,8 @@
   font-weight: 400;
   line-height: 26px;
   position: relative;
+  padding: 0;
+  margin: 0;
   width: 100%;
 }
 
@@ -13,9 +15,16 @@
   position: absolute;
   border-bottom: 2px solid #68b738;
   width: 100%;
-  top: 42px;
+  top: 16px;
   right: 0;
   z-index: -1;
+}
+
+.special-title__text {
+  display: inline-block;
+  margin: 0;
+  padding: 0 20px;
+  background-color: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,7 +37,11 @@
   }
 
   .special-title::after {
-    top: 87px;
+    top: 22px;
+  }
+
+  .special-title__text {
+    padding: 0 39px;
   }
 }
 
@@ -38,6 +51,17 @@
   }
 
   .special-title::after {
-    top: 92px;
+    top: 22px;
+  }
+
+  .special-title__text {
+    padding: 0 38px 0 40px;
+    margin-left: -40px;
+  }
+
+  .special-title__block {
+    margin: 0 auto;
+    width: 1220px;
+    display: block;
   }
 }

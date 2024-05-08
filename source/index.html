@@ -5,12 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="shortcut icon" type="image/png" sizes="16x16" href="./img/icons/fav-16.png">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="./img/icons/fav-32.png">
+  <link rel="apple-touch-icon" href="./img/icons/fav-180.png" sizes="180x180" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.css" class="styles">
 </head>
 
 <body class="body">
-  <!-- <span class="body-index-background"></span> -->
   <header class="header">
     <a href="index.html" class="header__link">
       <picture>
@@ -20,7 +22,7 @@
       </picture>
     </a>
     <nav class="nav">
-      <ul class="nav__menu menu">
+      <ul class="nav__menu menu menu--activ menu--close">
         <li class="menu__item">
           <a href="index.html" class="menu__link">главная</a>
         </li>
@@ -39,16 +41,18 @@
   <main class="main">
     <section class="main__welcome-block welcome">
       <div class="welcome__background"></div>
-      <div class="welcome__wrapper">
-        <div class="welcome__container">
-          <h1 class="welcome__title">Функциональное
-            питание для котов</h1>
-          <p class="welcome__text">
-            Занялся собой? Займись котом!
-          </p>
+      <div class="welcome__desktop-container">
+        <div class="welcome__wrapper">
+          <div class="welcome__container">
+            <h1 class="welcome__title">Функциональное
+              питание для котов</h1>
+            <p class="welcome__text">
+              Занялся собой? Займись котом!
+            </p>
+          </div>
         </div>
+        <a href="#" class="button-link welcome__link">подобрать программу</a>
       </div>
-      <a href="#" class="button-link welcome__link">подобрать программу</a>
     </section>
     <section class="main__product product">
       <div class="product__block product__block--slim">
@@ -150,13 +154,13 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <!-- <div class="map__image">
+        <div class="map__image">
           <picture>
             <source srcset="./img/map-desktop.jpg" media="(min-width: 1440px)" width="1440" height="400">
             <source srcset="./img/map-tablet.jpg" media="(min-width: 768px)" width="768" height="400">
-            <img src="./img/map-mobile.jpg" alt="карта" width="320" height="362">
+            <img class="map__image-pic" src="./img/map-mobile.jpg" alt="карта" width="320" height="362">
           </picture>
-        </div> -->
+        </div>
       </div>
     </section>
     <section class="contacts">

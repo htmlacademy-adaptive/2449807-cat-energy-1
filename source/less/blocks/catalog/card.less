@@ -75,12 +75,28 @@
 .card__link--more:hover {
   background-color: #ebebeb;
 }
+
 .card__link--more:focus {
   background-color: #ebebeb;
 }
+
 .card__link--more:active {
   background-color: #ebebeb;
   color: #444444;
+}
+
+.retina {
+  display: none;
+}
+
+@media(min-resolution: 2dppx) {
+  .normal {
+    display: none;
+  }
+
+  .retina {
+    display: inline;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -143,7 +159,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    height: 40px;
+    min-height: 40px;
     padding: 10px 27px 10px 26px;
   }
 
@@ -235,7 +251,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    height: 40px;
+    min-height: 40px;
     padding: 10px 27px 10px 26px;
   }
 

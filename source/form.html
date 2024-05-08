@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="shortcut icon" type="image/png" sizes="16x16" href="./img/icons/fav-16.png">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="./img/icons/fav-32.png">
+  <link rel="apple-touch-icon" href="./img/icons/fav-180.png" sizes="180x180" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.css" class="styles">
 </head>
 
@@ -43,7 +46,7 @@
     <form class="order" action="https://echo.htmlacademy.ru/" method="post">
       <div class="order--container">
         <fieldset class="order__group pet-name">
-          <legend class="special-title visually-hidden">Введите данные питомца</legend>
+          <legend class="visually-hidden">Введите данные питомца</legend>
           <ul class="order__list pet-name__list">
             <li class="pet-name__item text-input">
               <label for="pet-name" class="text-input__label">ИМЯ:*</label>
@@ -60,7 +63,7 @@
           </ul>
         </fieldset>
         <fieldset class="order__group check-product">
-          <legend class="special-title visually-hidden">Тип продукции</legend>
+          <legend class="visually-hidden">Тип продукции</legend>
           <ul class="order__list check-product__list">
             <li class="check-product__item radio">
               <input id="loss" name="type-product" value="loss-weight" type="radio" class="radio__input visually-hidden"
@@ -80,8 +83,10 @@
         </fieldset>
       </div>
       <fieldset class="order__group contact-data">
-        <legend class="special-title contact-data__title">
-          <span class="contact-data__title-pad">Контактные данные (владельца кота)</span>
+        <legend class="contact-data__title special-title">
+          <span class="special-title__block">
+            <span class="special-title__text contact-data__text">Контактные данные (владельца кота)</span>
+          </span>
         </legend>
         <ul class="order__list contact-data__list">
           <li class="contact-data__item text-input">
@@ -96,7 +101,9 @@
       </fieldset>
       <fieldset class="order__group comment">
         <legend class="comment__title special-title">
-          <span class="comment__title-pad">Комментарий</span>
+          <span class="special-title__block">
+            <span class="special-title__text">Комментарий</span>
+          </span>
         </legend>
         <label for="note" class="text-input__label">
           <span class="visually-hidden">Оставте комментарий</span>
@@ -106,7 +113,9 @@
       </fieldset>
       <fieldset class="order__group additionally">
         <legend class="special-title additionally__title">
-          <span class="additionally__title-pad">Дополнительно</span>
+          <span class="special-title__block">
+            <span class="special-title__text">Дополнительно</span>
+          </span>
         </legend>
         <ul class="order__list additionally__list">
           <li class="additionally__item checkbox">
@@ -129,7 +138,7 @@
         </ul>
       </fieldset>
       <fieldset class="order__group sending">
-        <legend class="special-title sending__title visually-hidden">
+        <legend class="visually-hidden">
           <span class="visually-hidden">Отправка заявки</span>
         </legend>
         <button href="https://echo.htmlacademy.ru/" class="sending__link button-link">отправить заявку</button>
@@ -155,6 +164,13 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198161!2d30.320472477341305!3d59.9387191620936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1709993923032!5m2!1sru!2sua"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map__image">
+          <picture>
+            <source srcset="./img/map-desktop.jpg" media="(min-width: 1440px)" width="1440" height="400">
+            <source srcset="./img/map-tablet.jpg" media="(min-width: 768px)" width="768" height="400">
+            <img class="map__image-pic" src="./img/map-mobile.jpg" alt="карта" width="320" height="362">
+          </picture>
         </div>
       </div>
     </section>
