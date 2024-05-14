@@ -1,19 +1,117 @@
 .slider {
-  margin: 0 20px;
-  height: 294px;
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
+  position: relative;
 }
+
 .slider__list {
-  display: none;
+  padding: 0;
+  margin: 0;
+  width: 280px;
+  height: 256px;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.slider__item{}
+
+.slider__item {
+  width: 280px;
+  height: 256px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #eaeaea;
+}
+
+.slider__item--before {
+  z-index: 5;
+  width: 50%;
+  transition: width 1s ease;
+}
+
+.slider__item--after {
+  z-index: 1;
+}
+
+.slider__control {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/slider/thumb.svg");
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+  cursor: pointer;
+  transition: left 1s ease;
+}
+
+.slider__control::after {
+  position: absolute;
+  content: "";
+  height: 256px;
+  width: 4px;
+  background-color: #666666;
+  top: -108px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+}
+
+.slider--after .slider__item--before {
+  width: 0;
+}
+
+.slider--after .slider__control {
+  left: 0;
+}
+
+.slider--before .slider__item--before {
+  width: 100%;
+}
+
+.slider--before .slider__control {
+  left: 100%;
+}
 
 @media (min-width: @tablet-width) {
   .slider {
-    margin: 0;
-    padding: 0 104px;
-    padding-bottom: 38px;
-    height: 661px;
-    background-image: linear-gradient(#ffffff 237px, #eaeaea 102px);
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+  }
+
+  .slider__list {
+    width: 560px;
+    height: 512px;
+  }
+
+  .slider__item {
+    width: 560px;
+    height: 512px;
+    background-image: linear-gradient(#ffffff 151px, #eaeaea 50px);
+  }
+
+  .slider__item--before {
+    width: 50%;
+  }
+
+  .slider__control::after {
+    position: absolute;
+    content: "";
+    height: 512px;
+    width: 4px;
+    background-color: #666666;
+    top: -236px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
   }
 }
 
@@ -22,7 +120,11 @@
     margin: 0;
     padding: 0;
     width: 560px;
-    height: 392px;
+    height: 512px;
     background-image: none;
+  }
+
+  .slider__item {
+    background-image: linear-gradient(#ffffff 135px, #eaeaea 50px);
   }
 }

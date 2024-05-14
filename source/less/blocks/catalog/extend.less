@@ -56,14 +56,27 @@
   .card__item--extend {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 0;
     padding: 4px 3px 0 0;
+    width: 222px;
   }
 
   .card__text--extend {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+  }
+
+  .card__text--left {
+    text-align: right;
+    display: block;
+    min-width: 131px;
+  }
+
+  .card__text--right {
+    text-align: right;
+    min-width: 50px;
+    display: block;
   }
 }
 
@@ -113,7 +126,6 @@
   .card__item--extend {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
     padding: 4px 0 0 0;
     width: 284px;
     margin-right: 41px;
@@ -123,9 +135,20 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    text-align: left;
     margin: 0;
     padding-top: 9px;
+  }
+
+  .card__text--left {
+    text-align: left;
+    display: block;
+    min-width: 143px;
+  }
+
+  .card__text--right {
+    text-align: left;
+    min-width: 41px;
+    display: block;
   }
 
   .card__link--extend {

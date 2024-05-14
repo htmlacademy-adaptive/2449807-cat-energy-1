@@ -2,7 +2,22 @@
   position: relative;
 }
 
-.nav__menu {}
+.nav__menu {
+  // display: none;
+}
+
+.nav--active .nav__menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.nav--closed .nav__menu {
+  display: none;
+}
 
 .nav__toggle {
   position: absolute;
@@ -15,18 +30,20 @@
   cursor: pointer;
   right: 21px;
   top: -45px;
+  display: none;
 }
 
-.menu--active+.nav__toggle {
+.nav--active .nav__toggle {
   background-image: url("../img/icons/button-nav-close.svg");
   width: 19px;
   height: 19px;
   cursor: pointer;
   right: 19px;
   top: -43px;
+  display: block;
 }
 
-.menu--closed+.nav__toggle {
+.nav--closed .nav__toggle {
   background-image: url("../img/icons/button-nav-open.svg");
   border: none;
   width: 24px;
@@ -34,10 +51,20 @@
   cursor: pointer;
   right: 21px;
   top: -45px;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
+  .nav--closed .nav__menu {
+    display: flex;
+  }
   .nav__toggle {
+    display: none;
+  }
+  .nav--closed .nav__toggle {
+    display: none;
+  }
+  .nav--active .nav__toggle {
     display: none;
   }
 }
