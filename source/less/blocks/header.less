@@ -17,11 +17,46 @@
   top: 13px;
 }
 
+.header__link:hover {
+  opacity: 0.6;
+}
+.header__link:focus {
+  opacity: 0.6;
+  outline: none;
+}
+.header__link:active {
+  opacity: 0.4;
+}
 @media (min-width: @tablet-width) {
   .header {
     background: none;
     padding-top: 25px;
     display: flex;
     justify-content: flex-end;
+  }
+
+  .header__link {
+    width: 174px;
+    height: 50px;
+    left: 30px;
+    top: 25px;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .header {
+    background: none;
+    padding-top: 56px;
+    display: flex;
+    justify-content: flex-end;
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .header__link {
+    width: 202px;
+    height: 59px;
+    left: 0;
+    top: 55px;
   }
 }

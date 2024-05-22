@@ -1,0 +1,46 @@
+.sending__text {
+  display: block;
+  margin: 0 20px;
+  padding: 22px 20px 31px 18px;
+  color: #000000;
+  font-family: @lato-r;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}
+
+.sending__link {
+  padding: 0 78px;
+}
+
+@media (min-width: @tablet-width) {
+  .sending {
+    display: flex;
+    gap: 57px;
+    flex-wrap: wrap;
+    margin: 0 70px;
+    margin-bottom: 60px;
+  }
+
+  .sending__text {
+    margin: 0;
+    padding: 0;
+    padding-top: 17px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .sending__link {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sending {
+    gap: 77px;
+    margin: 0 auto;
+    margin-bottom: 79px;
+    width: 1220px;
+  }
+}

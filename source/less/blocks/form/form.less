@@ -1,0 +1,50 @@
+.form {
+  padding-top: 28px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.form__title {
+  margin-bottom: 37px;
+}
+
+.form__text {
+  margin-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    padding-top: 66px;
+    border: none;
+  }
+
+  .form__title {
+    margin: 0 70px;
+    margin-bottom: 56px;
+  }
+
+  .form__text {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    padding-top: 79px;
+  }
+
+  .form__title {
+    margin: 0 auto;
+    margin-bottom: 56px;
+  }
+
+  .form__text {
+    margin: 0;
+    text-align: left;
+    display: block;
+    width: 330px;
+  }
+  .form__text--desktop {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

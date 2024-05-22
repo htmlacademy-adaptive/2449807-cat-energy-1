@@ -1,0 +1,43 @@
+.order {
+  padding-top: 38px;
+}
+
+.order__group {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.order__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .order {
+    padding-top: 65px;
+  }
+
+  .order__list {
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order {
+    padding-top: 65px;
+    margin: 0;
+  }
+  .order--container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1222px;
+    margin-bottom: 5px;
+  }
+  .order__list {
+    padding: 0;
+  }
+}
