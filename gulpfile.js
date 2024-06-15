@@ -65,13 +65,13 @@ const createWepb = () => {
 //Svg
 
 const svg = () => {
-  return gulp.src('source/img/*.svg')
+  return gulp.src('source/img/**/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
 
 const spriteSvg = () => {
-  return gulp.src('source/img/icons/*.svg')
+  return gulp.src('source/img/sprite-folder/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
@@ -85,8 +85,8 @@ const spriteSvg = () => {
 const copy = () => {
   return gulp.src([
     'source/fonts/**/*.{woff2,woff}',
-    'source/ico/*.webmanifest',
-    'source/ico/*.ico'
+    '*.webmanifest',
+    '*.ico'
   ], {
     base: 'source'
   })
