@@ -1,6 +1,7 @@
 .text-input {
   display: flex;
   gap: 13px;
+  position: relative;
 }
 
 .text-input__label {
@@ -24,9 +25,20 @@
   flex-grow: 1;
   border: 1px solid #e7e7e7;
   height: 45px;
-  padding: 14px 15px 13px 15px;
+  padding: 14px 14px 13px 14px;
   box-sizing: border-box;
+}
 
+.text-input__input--email-sprite {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+}
+
+.text-input__input--tel-sprite {
+  position: absolute;
+  top: 16px;
+  right: 15px;
 }
 
 .text-input__input:hover {

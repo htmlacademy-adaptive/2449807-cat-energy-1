@@ -9,7 +9,7 @@
   height: 24px;
   margin: 0 auto;
   margin-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 22px;
 }
 
 .contacts__logo:hover {
@@ -54,34 +54,12 @@
   background-repeat: no-repeat;
 }
 
-.contacts__link:hover {
-  opacity: 0.6;
-}
-
-.contacts__link:focus {
-  opacity: 0.6;
-  outline: none;
-}
-
 .contacts__link:active {
   opacity: 0.3;
 }
 
 .contacts__link:disabled {
   opacity: 0.2;
-}
-
-.contacts__link--vk {
-  background-image: url("../img/icons/vk-contacts.svg");
-
-}
-
-.contacts__link--youtube {
-  background-image: url("../img/icons/youtube-contacts.svg");
-}
-
-.contacts__link--telegram {
-  background-image: url("../img/icons/telegram-contacts.svg");
 }
 
 .contacts__academy {
@@ -102,31 +80,26 @@
   height: 36px;
   display: block;
 }
-.contacts__academy-link:hover {
-  opacity: 0.6;
-}
 
 .contacts__academy-link:focus {
-  opacity: 0.6;
   outline: none;
 }
 
-.contacts__academy-link:active {
-  opacity: 0.3;
-}
-
-.contacts__academy-link:disabled {
-  opacity: 0.2;
-}
 .contacts__academy-link--letter {
-  background-image: url("../img/icons/academy-footer.svg");
   background-position: center;
   width: 113px;
+  height: 20px;
+  padding-top: 12px;
+  padding-left: 2px;
+}
+
+.contacts__academy-link--letter:active {
+  opacity: 0.3;
 }
 
 .contacts__academy-link--pic {
   width: 27px;
-  background-image: url("../img/icons/academy-footer-pic.svg");
+  height: 34px;
 }
 
 
@@ -154,10 +127,8 @@
     justify-content: center;
     padding: 0;
     gap: 24px;
-    margin: 0;
     border: none;
-    margin-top: 8px;
-    margin-left: 41px;
+    margin: 9px 0 0 33px;
   }
 
   .contacts__item {
@@ -173,19 +144,6 @@
     background-repeat: no-repeat;
   }
 
-  .contacts__link--vk {
-    background-image: url("../img/icons/vk-contacts.svg");
-
-  }
-
-  .contacts__link--youtube {
-    background-image: url("../img/icons/youtube-contacts.svg");
-  }
-
-  .contacts__link--telegram {
-    background-image: url("../img/icons/telegram-contacts.svg");
-  }
-
   .contacts__academy {
     list-style: none;
     display: flex;
@@ -193,6 +151,7 @@
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    gap: 20px;
   }
 
   .contacts__academy-item {
@@ -206,12 +165,11 @@
   }
 
   .contacts__academy-link--letter {
-    display: none;
+    padding-top: 13px;
   }
 
   .contacts__academy-link--pic {
-    width: 168px;
-    background-image: url("../img/icons/tablet-academy-footer-pic.svg");
+    padding-top: 2px;
   }
 }
 
@@ -219,7 +177,7 @@
   .contacts {
     margin: 0 auto;
     width: 1220px;
-    padding: 65px 0 55px 0;
+    padding: 66px 0 55px 0;
     display: flex;
     justify-content: space-between;
   }

@@ -7,13 +7,22 @@
 }
 
 .welcome__container {
-  background: #63a73a url("../img/green-cat-background.jpeg") no-repeat center;
+  background-color: #63a73a;
+  background-image: image-set(url("../img/green-cat-background.webp"),
+      url("../img/green-cat-background.jpg"));
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: auto 100%;
   padding-bottom: 163px;
   margin-bottom: 138px;
   padding-top: 27px;
+
   @media (min-resolution: 2dppx) {
-    background: #63a73a url("../img/green-cat-background-2x.jpeg") no-repeat cover;
+    background-color: #63a73a;
+    background-image: image-set(url("../img/green-cat-background-2x.webp"),
+        url("../img/green-cat-background-2x.jpg"));
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -24,20 +33,28 @@
 .welcome__wrapper::after {
   content: "";
   position: absolute;
-  background-image: url("../img/product-cat-energy.svg");
+  background-image: image-set(url("../img/index-can-mobile.webp"),
+      url("../img/index-can-mobile.png"));
   background-repeat: no-repeat;
   width: 280px;
   height: 270px;
   top: 167px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-resolution: 2dppx) {
+    background-image: image-set(url("../img/index-can-mobile@2x.webp"),
+        url("../img/index-can-mobile@2x.png"));
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .welcome__title {
   margin: 0 auto;
   text-align: center;
   color: #ffffff;
-  font-family: "Oswaldregular", Arial, san-serif;
+  font-family: @oswald-r;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -49,7 +66,7 @@
   margin: 0 auto;
   text-align: center;
   color: #ffffff;
-  font-family: "Oswaldregular", Arial, san-serif;
+  font-family: @oswald-r;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -64,16 +81,16 @@
   display: block;
   text-align: center;
   color: #ffffff;
-  font-family: "Oswaldregular", Arial, san-serif;
+  font-family: @oswald-r;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  letter-spacing: 0.077em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   min-height: 40px;
   box-sizing: border-box;
   margin: 0 20px;
-  padding: 13px 62px 12px 65px;
+  padding: 13px 61px 12px 61px;
 }
 
 @media (min-width: @tablet-width) {
@@ -104,13 +121,16 @@
   .welcome::after {
     content: "";
     position: absolute;
-    background-image: url("../img/tablet-cat-energy-product.jpeg");
+    background-image: image-set(url("../img/index-can-tablet.webp"),
+        url("../img/index-can-tablet.png"));
     width: 709px;
     height: 609px;
     z-index: -1;
     bottom: -20px;
+
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/tablet-cat-energy-product-2x.jpeg");
+      background-image: image-set(url("../img/index-can-tablet@2x.webp"),
+          url("../img/index-can-tablet@2x.png"));
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -172,13 +192,14 @@
     right: 0;
     z-index: -1;
     background-color: #64a73d;
-    background-image: url(../img/green-cat-desktop.jpeg);
+    background-image: url("../img/green-cat-desktop.jpg");
     background-position: bottom right;
     background-repeat: no-repeat;
     width: 50%;
     height: calc(100% + 300px);
+
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/green-cat-desktop-2x.jpeg);
+      background-image: url("../img/green-cat-desktop-2x.jpg");
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -199,11 +220,19 @@
     display: block;
     content: "";
     position: absolute;
-    background-image: url("../../img/product-cat-energy-desktop.svg");
+    background-image: image-set(url("../img/index-can.webp"),
+        url("../img/index-can.png"));
     width: 552px;
     height: 499px;
     top: -82px;
     left: 59.3%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: image-set(url("../img/index-can@2x.webp"),
+          url("../img/index-can@2x.png"));
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   .welcome__title {
