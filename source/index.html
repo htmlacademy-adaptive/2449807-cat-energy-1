@@ -2,19 +2,19 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="icon" href="./ico/favicon.ico" sizes="32x32" />
-  <link rel="shortcut icon" type="image/png" sizes="32x32" href="./img/icons/fav-32.png" />
-  <link rel="apple-touch-icon" href="./img/icons/fav-180.png" sizes="180x180" type="image/png" />
-  <link rel="manifest" href="./ico/manifest.webmanifest" />
+  <link rel="icon" href="./favicon.ico" sizes="32x32">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="./img/icons/fav-32.png">
+  <link rel="apple-touch-icon" href="./img/icons/fav-180.png" sizes="180x180" type="image/png">
+  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="preload" href="./css/style.min.css" as="style">
   <link rel="preload" href="./js/script.js" as="script">
   <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.min.css" class="styles" />
+  <link rel="stylesheet" href="./css/style.min.css" />
 </head>
 
 <body class="body">
@@ -28,17 +28,26 @@
     </a>
     <nav class="nav">
       <ul class="nav__menu menu">
-        <li class="menu__item"><a href="index.html" class="menu__link">главная</a></li>
-        <li class="menu__item"><a href="catalog.html" class="menu__link">каталог продукции</a></li>
-        <li class="menu__item"><a href="form.html" class="menu__link">подбор программы</a></li>
+        <li class="menu__item">
+          <a href="index.html" class="menu__link">главная</a>
+        </li>
+        <li class="menu__item">
+          <a href="catalog.html" class="menu__link">каталог продукции</a>
+        </li>
+        <li class="menu__item">
+          <a href="form.html" class="menu__link">подбор программы</a>
+        </li>
       </ul>
-      <button class="nav__toggle" type="button"><span class="visually-hidden">открытие/закрытие мобильного
-          меню</span></button>
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">открытие/закрытие мобильного меню</span>
+      </button>
     </nav>
   </header>
   <main class="main">
     <section class="main__welcome-block welcome">
-      <div class="welcome__background"></div>
+      <div class="welcome__background">
+        <span class="visually-hidden">Кот-десктоп</span>
+      </div>
       <div class="welcome__desktop-container">
         <div class="welcome__wrapper">
           <div class="welcome__container">
@@ -46,7 +55,7 @@
             <p class="welcome__text">Занялся собой? Займись котом!</p>
           </div>
         </div>
-        <a href="#" class="button-link welcome__link">подобрать программу</a>
+        <a href="./form.html" class="button-link welcome__link">подобрать программу</a>
       </div>
     </section>
     <section class="main__product product">
@@ -85,7 +94,9 @@
       </ul>
     </section>
     <section class="main__example example">
-      <h2 class="example__title"><span class="example__title--pad">Живой пример</span></h2>
+      <h2 class="example__title">
+        <span class="example__title example__title--pad">Живой пример</span>
+      </h2>
       <div class="example__container">
         <div class="example__block description">
           <p class="description__text">
@@ -103,8 +114,9 @@
                 <dd class="statistic__description statistic__description--time">затрачено времени</dd>
               </div>
             </dl>
-            <p class="description__total"><span class="total__category">затраты на питание:</span> <span
-                class="total__sum">15 000 руб.</span></p>
+            <p class="description__total total"><span class="total__category">затраты на питание:</span>
+              <span class="total__sum">15 000 руб.</span>
+            </p>
           </div>
         </div>
         <div class="example__block example__block-slider">
@@ -112,45 +124,39 @@
             <ul class="slider__list">
               <li class="slider__item slider__item--before">
                 <picture>
-                  <source type="image/webp" srcset="./img/slider/fat-cat-tablet.webp" media="(min-width: 768px)"
-                    width="560" height="512" class="normal" />
-                  <source type="image/webp" srcset="./img/slider/fat-cat-tabletx2.webp" media="(min-width: 768px)"
-                    width="560" height="512" class="retina" />
-                  <source type="image/webp" srcset="./img/slider/fat-cat-mob.webp" alt="до" class="normal" width="280"
+                  <source type="image/webp"
+                    srcset="./img/slider/fat-cat-tablet.webp 1x, ./img/slider/fat-cat-tabletx2.webp 2x"
+                    media="(min-width: 768px)" width="560" height="512" />
+                  <source type="image/webp"
+                    srcset="./img/slider/fat-cat-mob.webp 1x, ./img/slider/fat-cat-mobx2.webp 2x" width="280"
                     height="256" />
-                  <source type="image/webp" srcset="./img/slider/fat-cat-mobx2.webp" alt="до" width="280" height="256"
-                    class="retina" />
-                  <source srcset="./img/slider/fat-cat-tablet.png" media="(min-width: 768px)" width="560" height="512"
-                    class="normal" />
-                  <source srcset="./img/slider/fat-cat-tabletx2.png" media="(min-width: 768px)" width="560" height="512"
-                    class="retina" />
-                  <img src="./img/slider/fat-cat-mob.png" alt="до" class="normal" width="280" height="256" /> <img
-                    src="./img/slider/fat-cat-mobx2.png" alt="до" width="280" height="256" class="retina" />
+                  <source srcset="./img/slider/fat-cat-tablet.png 1x, ./img/slider/fat-cat-tabletx2.png 2x"
+                    media="(min-width: 768px)" width="560" height="512" />
+                  <img src="./img/slider/fat-cat-mob.png" srcset="./img/slider/fat-cat-mobx2.png 2x" alt="до"
+                    width="280" height="256" />
                 </picture>
               </li>
               <li class="slider__item slider__item--after">
                 <picture>
-                  <source type="image/webp" srcset="./img/slider/slim-cat-tablet.webp" alt="после"
-                    media="(min-width: 768px)" width="560" height="512" class="normal" />
-                  <source type="image/webp" srcset="./img/slider/slim-cat-tabletx2.webp" alt="после"
-                    media="(min-width: 768px)" width="560" height="512" class="retina" />
-                  <source type="image/webp" srcset="./img/slider/slim-cat-mob.webp" alt="после" class="normal"
+                  <source type="image/webp"
+                    srcset="./img/slider/slim-cat-tablet.webp 1x, ./img/slider/slim-cat-tabletx2.webp 2x"
+                    media="(min-width: 768px)" width="560" height="512" />
+                  <source type="image/webp"
+                    srcset="./img/slider/slim-cat-mob.webp 1x, ./img/slider/slim-cat-mobx2.webp 2x" width="280"
+                    height="256" />
+                  <source srcset="./img/slider/slim-cat-tablet.png 1x, ./img/slider/slim-cat-tabletx2.png 2x"
+                    media="(min-width: 768px)" width="560" height="512" />
+                  <img src="./img/slider/slim-cat-mob.png" srcset="./img/slider/slim-cat-mobx2.png 2x" alt="после"
                     width="280" height="256" />
-                  <source type="image/webp" srcset="./img/slider/slim-cat-mobx2.webp" alt="после" width="280"
-                    height="256" class="retina" />
-                  <source srcset="./img/slider/slim-cat-tablet.png" alt="после" media="(min-width: 768px)" width="560"
-                    height="512" class="normal" />
-                  <source srcset="./img/slider/slim-cat-tabletx2.png" alt="после" media="(min-width: 768px)" width="560"
-                    height="512" class="retina" />
-                  <img src="./img/slider/slim-cat-mob.png" alt="после" class="normal" width="280" height="256" /> <img
-                    src="./img/slider/slim-cat-mobx2.png" alt="после" width="280" height="256" class="retina" />
                 </picture>
               </li>
             </ul>
             <button class="slider__control" type="button">
               <span class="visually-hidden">показать следующий слайд</span>
             </button>
-            <span class="slider__stick"></span>
+            <span class="slider__stick">
+              <span class="visually-hidden">Контроль слайда</span>
+            </span>
           </div>
         </div>
       </div>
@@ -186,8 +192,11 @@
       </div>
     </section>
     <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
       <a href="#" class="contacts__logo">
-        <picture><img src="./img/icons/logo-page.svg" alt="Логотип Cat-Energy" width="128" height="24" /></picture>
+        <picture>
+          <img src="./img/icons/logo-page.svg" alt="Логотип Cat-Energy" width="128" height="24" />
+        </picture>
       </a>
       <ul class="contacts__list">
         <li class="contacts__item">

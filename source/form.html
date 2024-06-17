@@ -5,24 +5,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="icon" href="./ico/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="./favicon.ico" sizes="32x32" />
   <link rel="shortcut icon" type="image/png" sizes="32x32" href="./img/icons/fav-32.png" />
   <link rel="apple-touch-icon" href="./img/icons/fav-180.png" sizes="180x180" type="image/png" />
-  <link rel="manifest" href="./ico/manifest.webmanifest" />
+  <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="preload" href="./css/style.min.css" as="style">
   <link rel="preload" href="./js/script.js" as="script">
   <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.min.css" class="styles" />
+  <link rel="stylesheet" href="./css/style.min.css" />
 </head>
 
 <body class="body">
   <header class="header">
     <a href="index.html" class="header__link">
       <picture>
-        <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)" width="202" height="59"/>
-        <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" width="174" height="50"/>
+        <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)" width="202" height="59" />
+        <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" width="174" height="50" />
         <img class="header__logo" src="./img/icons/logo-mobile.svg" alt="Логотип сайта" width="33" height="38" />
       </picture>
     </a>
@@ -42,7 +42,7 @@
       <p class="inner-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
     <form class="order" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="order--container">
+      <div class="order__container">
         <fieldset class="order__group pet-name">
           <legend class="visually-hidden">Введите данные питомца</legend>
           <ul class="order__list pet-name__list">
@@ -80,9 +80,9 @@
         <ul class="order__list contact-data__list">
           <li class="contact-data__item text-input">
             <label for="email" class="text-input__label">E-mail:*</label>
-            <input id="email" type="email" name="E-mail" value="kuklachev@gmail.com" class="text-input__input"
-              required />
-            <span class="text-input__input--email-sprite">
+            <input id="email" type="email" name="E-mail" placeholder="Ваш email" value="kuklachev@gmail.com"
+              class="text-input__input" required />
+            <span class="text-input__sprite">
               <svg width="18.000000" height="14.000000" viewBox="0 0 18 14" fill="none"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <use href="./img/sprite.svg#email-icon"></use>
@@ -91,8 +91,9 @@
           </li>
           <li class="contact-data__item text-input">
             <label for="number" class="text-input__label">Телефон:*</label>
-            <input id="number" name="number" value="8 (960) 900-60-90" type="tel" class="text-input__input" required />
-            <span class="text-input__input--tel-sprite">
+            <input id="number" name="number" placeholder="Ваш телефон" type="tel" value="8 (960) 900-60-90"
+              class="text-input__input" required />
+            <span class="text-input__sprite">
               <svg width="16.000000" height="16.000000" viewBox="0 0 16 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <use href="./img/sprite.svg#phone-icon"></use>
@@ -103,15 +104,21 @@
       </fieldset>
       <fieldset class="order__group comment">
         <legend class="comment__title special-title">
-          <span class="special-title__block"><span class="special-title__text">Комментарий</span></span>
+          <span class="special-title__block">
+            <span class="special-title__text">Комментарий</span>
+          </span>
         </legend>
-        <label for="note" class="text-input__label"><span class="visually-hidden">Оставте комментарий</span></label>
-        <textarea class="text-input__input comment__input" name="comment" id="note" cols="30" rows="10"
+        <label for="note" class="comment__label">
+          <span class="visually-hidden">Оставте комментарий</span>
+        </label>
+        <textarea class="comment__input" name="comment" id="note" cols="30" rows="10"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="order__group additionally">
         <legend class="special-title additionally__title">
-          <span class="special-title__block"><span class="special-title__text">Дополнительно</span></span>
+          <span class="special-title__block">
+            <span class="special-title__text">Дополнительно</span>
+          </span>
         </legend>
         <ul class="order__list additionally__list">
           <li class="additionally__item checkbox">
@@ -130,7 +137,7 @@
       </fieldset>
       <fieldset class="order__group sending">
         <legend class="visually-hidden"><span class="visually-hidden">Отправка заявки</span></legend>
-        <button href="https://echo.htmlacademy.ru/" class="sending__link button-link">отправить заявку</button>
+        <button type="submit" class="sending__link button-link">отправить заявку</button>
         <p class="sending__text">* — Обязательные поля</p>
       </fieldset>
     </form>
@@ -165,6 +172,7 @@
       </div>
     </section>
     <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
       <a href="#" class="contacts__logo">
         <picture><img src="./img/icons/logo-page.svg" alt="Логотип Cat-Energy" width="128" height="24" /></picture>
       </a>

@@ -29,13 +29,7 @@
   box-sizing: border-box;
 }
 
-.text-input__input--email-sprite {
-  position: absolute;
-  top: 16px;
-  right: 15px;
-}
-
-.text-input__input--tel-sprite {
+.text-input__sprite {
   position: absolute;
   top: 16px;
   right: 15px;
@@ -45,13 +39,25 @@
   border-color: #cdcdcd;
 }
 
+.text-input__input:hover + .text-input__sprite {
+  color: #68b738;
+}
+
 .text-input__input:focus {
   border-color: #444444;
   outline-color: #444444;
 }
 
-.text-input__input:invalid {
+.text-input__input:focus + .text-input__sprite {
+  color: #68b738;
+}
+
+.text-input__input:invalid:not(:placeholder-shown) {
   border: 2px solid #ff8282;
+}
+
+.text-input__input:invalid:not(:placeholder-shown) + .text-input__sprite {
+  color: #ff8282;
 }
 
 @media (min-width: @tablet-width) {
@@ -68,7 +74,6 @@
   }
 
   .text-input__input {
-
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -76,5 +81,17 @@
     height: 52px;
     padding: 14px 19px 13px 21px;
     box-sizing: border-box;
+  }
+
+  .text-input__sprite {
+    top: 19px;
+    right: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-input__sprite {
+    top: 18px;
+    right: 18px;
   }
 }
