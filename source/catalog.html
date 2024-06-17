@@ -6,25 +6,25 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.min.css" class="styles" />
-  <link rel="icon" href="./ico/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="./favicon.ico" sizes="32x32" />
   <link rel="shortcut icon" type="image/png" sizes="32x32" href="./img/icons/fav-32.png" />
   <link rel="apple-touch-icon" href="./img/icons/fav-180.png" sizes="180x180" type="image/png" />
-  <link rel="manifest" href="./ico/manifest.webmanifest" />
+  <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="preload" href="./css/style.min.css" as="style">
   <link rel="preload" href="./js/script.js" as="script">
   <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.min.css" class="styles" />
+  <link rel="stylesheet" href="./css/style.min.css" />
 </head>
 
 <body class="body">
   <header class="header">
     <a href="index.html" class="header__link">
       <picture>
-        <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)" width="202" height="59"/>
-        <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" width="174" height="50"/>
-        <img class="header__logo" src="./img/icons/logo-mobile.svg" alt="Логотип сайта" width="33" height="38"/>
+        <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)" width="202" height="59" />
+        <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" width="174" height="50" />
+        <img class="header__logo" src="./img/icons/logo-mobile.svg" alt="Логотип сайта" width="33" height="38" />
       </picture>
     </a>
     <nav class="nav">
@@ -44,28 +44,21 @@
         <li class="catalog__card card">
           <div class="card__picture">
             <picture>
-              <source type="image/webp" srcset="./img/catalog-card/chick500-desk-x2.webp" media="(min-width: 1440px)"
-                width="169" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/chick500-desk.webp" media="(min-width: 1440px)"
-                width="169" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/chick500-tab-x2.webp" media="(min-width: 768px)"
-                width="200" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/chick500-tab.webp" media="(min-width: 768px)"
-                width="200" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/chick500-mob.webp" alt="рыба" width="140"
-                height="107" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/chick500-mob-x2.webp" alt="рыба" width="140"
-                height="107" class="retina" />
-              <source srcset="./img/catalog-card/chick500-desk-x2.png" media="(min-width: 1440px)" width="169"
-                height="210" class="retina" />
-              <source srcset="./img/catalog-card/chick500-desk.png" media="(min-width: 1440px)" width="169" height="210"
-                class="normal" />
-              <source srcset="./img/catalog-card/chick500-tab-x2.png" media="(min-width: 768px)" width="200"
-                height="210" class="retina" />
-              <source srcset="./img/catalog-card/chick500-tab.png" media="(min-width: 768px)" width="200" height="210"
-                class="normal" />
-              <img src="./img/catalog-card/chick500-mob.png" alt="курица" width="140" height="107" class="normal" />
-              <img src="./img/catalog-card/chick500-mob-x2.png" alt="курица" width="140" height="107" class="retina" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/chick500-desk.webp 1x, ./img/catalog-card/chick500-desk-x2.webp 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/chick500-tab.webp 1x, ./img/catalog-card/chick500-tab-x2.webp 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/chick500-mob.webp 1x, ./img/catalog-card/chick500-mob-x2.webp 2x" width="140"
+                height="107" />
+              <source srcset="./img/catalog-card/chick500-desk.png 1x, ./img/catalog-card/chick500-desk-x2.png 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source srcset="./img/catalog-card/chick500-tab.png 1x, ./img/catalog-card/chick500-tab-x2.png 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <img src="./img/catalog-card/chick500-mob.png" srcset="./img/catalog-card/chick500-mob-x2.png 2x"
+                alt="курица" width="140" height="107" />
             </picture>
           </div>
           <div class="card__info">
@@ -90,28 +83,21 @@
         <li class="catalog__card card">
           <div class="card__picture">
             <picture>
-              <source type="image/webp" srcset="./img/catalog-card/chick1000-desk-x2.webp" media="(min-width: 1440px)"
-                width="169" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/chick1000-desk.webp" media="(min-width: 1440px)"
-                width="169" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/chick1000-tab-x2.webp" media="(min-width: 768px)"
-                width="200" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/chick1000-tab.webp" media="(min-width: 768px)"
-                width="200" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/chick1000-mob.webp" alt="рыба" width="140"
-                height="107" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/chick1000-mob-x2.webp" alt="рыба" width="140"
-                height="107" class="retina" />
-              <source srcset="./img/catalog-card/chick1000-desk-x2.png" media="(min-width: 1440px)" width="169"
-                height="210" class="retina" />
-              <source srcset="./img/catalog-card/chick1000-desk.png" media="(min-width: 1440px)" width="169"
-                height="210" class="normal" />
-              <source srcset="./img/catalog-card/chick1000-tab-x2.png" media="(min-width: 768px)" width="200"
-                height="210" class="retina" />
-              <source srcset="./img/catalog-card/chick1000-tab.png" media="(min-width: 768px)" width="200" height="210"
-                class="normal" />
-              <img src="./img/catalog-card/chick1000-mob.png" alt="курица" width="140" height="107" class="normal" />
-              <img src="./img/catalog-card/chick1000-mob-x2.png" alt="курица" width="140" height="107" class="retina" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/chick1000-desk.webp 1x, ./img/catalog-card/chick1000-desk-x2.webp 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/chick1000-tab.webp 1x, ./img/catalog-card/chick1000-tab-x2.webp 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/chick1000-mob.webp 1x, ./img/catalog-card/chick1000-mob-x2.webp 2x"
+                width="140" height="107" />
+              <source srcset="./img/catalog-card/chick1000-desk.png 1x, ./img/catalog-card/chick1000-desk-x2.png 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source srcset="./img/catalog-card/chick1000-tab.png 1x, ./img/catalog-card/chick1000-tab-x2.png 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <img src="./img/catalog-card/chick1000-mob.png" srcset="./img/catalog-card/chick1000-mob-x2.png 2x"
+                alt="курица" width="140" height="107" />
             </picture>
           </div>
           <div class="card__info">
@@ -136,28 +122,21 @@
         <li class="catalog__card card">
           <div class="card__picture">
             <picture>
-              <source type="image/webp" srcset="./img/catalog-card/fish500-desk-x2.webp" media="(min-width: 1440px)"
-                width="169" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/fish500-desk.webp" media="(min-width: 1440px)"
-                width="169" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/fish500-tab-x2.webp" media="(min-width: 768px)"
-                width="200" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/fish500-tab.webp" media="(min-width: 768px)"
-                width="200" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/fish500-mob.webp" alt="рыба" width="140" height="107"
-                class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/fish500-mob-x2.webp" alt="рыба" width="140"
-                height="107" class="retina" />
-              <source srcset="./img/catalog-card/fish500-desk-x2.png" media="(min-width: 1440px)" width="169"
-                height="210" class="retina" />
-              <source srcset="./img/catalog-card/fish500-desk.png" media="(min-width: 1440px)" width="169" height="210"
-                class="normal" />
-              <source srcset="./img/catalog-card/fish500-tab-x2.png" media="(min-width: 768px)" width="200" height="210"
-                class="retina" />
-              <source srcset="./img/catalog-card/fish500-tab.png" media="(min-width: 768px)" width="200" height="210"
-                class="normal" />
-              <img src="./img/catalog-card/fish500-mob.png" alt="рыба" width="140" height="107" class="normal" />
-              <img src="./img/catalog-card/fish500-mob-x2.png" alt="рыба" width="140" height="107" class="retina" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/fish500-desk.webp 1x, ./img/catalog-card/fish500-desk-x2.webp 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/fish500-tab.webp 1x, ./img/catalog-card/fish500-tab-x2.webp 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/fish500-mob.webp 1x, ./img/catalog-card/fish500-mob-x2.webp 2x" width="140"
+                height="107" />
+              <source srcset="./img/catalog-card/fish500-desk.png 1x, ./img/catalog-card/fish500-desk-x2.png 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source srcset="./img/catalog-card/fish500-tab.png 1x, ./img/catalog-card/fish500-tab-x2.png 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <img src="./img/catalog-card/fish500-mob.png" srcset="./img/catalog-card/fish500-mob-x2.png 2x" alt="рыба"
+                width="140" height="107" />
             </picture>
           </div>
           <div class="card__info">
@@ -182,28 +161,21 @@
         <li class="catalog__card card">
           <div class="card__picture">
             <picture>
-              <source type="image/webp" srcset="./img/catalog-card/fish1000-desk-x2.webp" media="(min-width: 1440px)"
-                width="169" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/fish1000-desk.webp" media="(min-width: 1440px)"
-                width="169" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/fish1000-tab-x2.webp" media="(min-width: 768px)"
-                width="200" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/fish1000-tab.webp" media="(min-width: 768px)"
-                width="200" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/fish1000-mob.webp" alt="рыба" width="140"
-                height="107" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/fish1000-mob-x2.webp" alt="рыба" width="140"
-                height="107" class="retina" />
-              <source srcset="./img/catalog-card/fish1000-desk-x2.png" media="(min-width: 1440px)" width="169"
-                height="210" class="retina" />
-              <source srcset="./img/catalog-card/fish1000-desk.png" media="(min-width: 1440px)" width="169" height="210"
-                class="normal" />
-              <source srcset="./img/catalog-card/fish1000-tab-x2.png" media="(min-width: 768px)" width="200"
-                height="210" class="retina" />
-              <source srcset="./img/catalog-card/fish1000-tab.png" media="(min-width: 768px)" width="200" height="210"
-                class="normal" />
-              <img src="./img/catalog-card/fish1000-mob.png" alt="рыба" width="140" height="107" class="normal" />
-              <img src="./img/catalog-card/fish1000-mob-x2.png" alt="рыба" width="140" height="107" class="retina" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/fish1000-desk.webp 1x, ./img/catalog-card/fish1000-desk-x2.webp 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/fish1000-tab.webp 1x, ./img/catalog-card/fish1000-tab-x2.webp 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/fish1000-mob.webp 1x, ./img/catalog-card/fish1000-mob-x2.webp 2x" width="140"
+                height="107" />
+              <source srcset="./img/catalog-card/fish1000-desk.png 1x, ./img/catalog-card/fish1000-desk-x2.png 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source srcset="./img/catalog-card/fish1000-tab.png 1x, ./img/catalog-card/fish1000-tab-x2.png 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <img src="./img/catalog-card/fish1000-mob.png" srcset="./img/catalog-card/fish1000-mob-x2.png 2x"
+                alt="рыба" width="140" height="107" />
             </picture>
           </div>
           <div class="card__info">
@@ -228,29 +200,22 @@
         <li class="catalog__card card">
           <div class="card__picture">
             <picture>
-              <source type="image/webp" srcset="./img/catalog-card/buckwheat500-desk-x2.webp"
-                media="(min-width: 1440px)" width="169" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/buckwheat500-desk.webp" media="(min-width: 1440px)"
-                width="169" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/buckwheat500-tab-x2.webp" media="(min-width: 768px)"
-                width="200" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/buckwheat500-tab.webp" media="(min-width: 768px)"
-                width="200" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/buckwheat500-mob.webp" alt="рыба" width="140"
-                height="107" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/buckwheat500-mob-x2.webp" alt="рыба" width="140"
-                height="107" class="retina" />
-              <source srcset="./img/catalog-card/buckwheat500-desk-x2.png" media="(min-width: 1440px)" width="169"
-                height="210" class="retina" />
-              <source srcset="./img/catalog-card/buckwheat500-desk.png" media="(min-width: 1440px)" width="169"
-                height="210" class="normal" />
-              <source srcset="./img/catalog-card/buckwheat500-tab-x2.png" media="(min-width: 768px)" width="200"
-                height="210" class="retina" />
-              <source srcset="./img/catalog-card/buckwheat500-tab.png" media="(min-width: 768px)" width="200"
-                height="210" class="normal" />
-              <img src="./img/catalog-card/buckwheat500-mob.png" alt="гречка" width="140" height="107" class="normal" />
-              <img src="./img/catalog-card/buckwheat500-mob-x2.png" alt="гречка" width="140" height="107"
-                class="retina" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/buckwheat500-desk.webp 1x, ./img/catalog-card/buckwheat500-desk-x2.webp 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/buckwheat500-tab.webp 1x, ./img/catalog-card/buckwheat500-tab-x2.webp 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/buckwheat500-mob.webp 1x, ./img/catalog-card/buckwheat500-mob-x2.webp 2x"
+                width="140" height="107" />
+              <source
+                srcset="./img/catalog-card/buckwheat500-desk.png 1x, ./img/catalog-card/buckwheat500-desk-x2.png 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source srcset="./img/catalog-card/buckwheat500-tab.png 1x, ./img/catalog-card/buckwheat500-tab-x2.png 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <img src="./img/catalog-card/buckwheat500-mob.png" srcset="./img/catalog-card/buckwheat500-mob-x2.png 2x"
+                alt="гречка" width="140" height="107" />
             </picture>
           </div>
           <div class="card__info">
@@ -275,30 +240,23 @@
         <li class="catalog__card card">
           <div class="card__picture">
             <picture>
-              <source type="image/webp" srcset="./img/catalog-card/buckwheat1000-desk-x2.webp"
-                media="(min-width: 1440px)" width="169" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/buckwheat1000-desk.webp" media="(min-width: 1440px)"
-                width="169" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/buckwheat1000-tab-x2.webp" media="(min-width: 768px)"
-                width="200" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/buckwheat1000-tab.webp" media="(min-width: 768px)"
-                width="200" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/buckwheat1000-mob.webp" alt="рыба" width="140"
-                height="107" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/buckwheat1000-mob-x2.webp" alt="рыба" width="140"
-                height="107" class="retina" />
-              <source srcset="./img/catalog-card/buckwheat1000-desk-x2.png" media="(min-width: 1440px)" width="169"
-                height="210" class="retina" />
-              <source srcset="./img/catalog-card/buckwheat1000-desk.png" media="(min-width: 1440px)" width="169"
-                height="210" class="normal" />
-              <source srcset="./img/catalog-card/buckwheat1000-tab-x2.png" media="(min-width: 768px)" width="200"
-                height="210" class="retina" />
-              <source srcset="./img/catalog-card/buckwheat1000-tab.png" media="(min-width: 768px)" width="200"
-                height="210" class="normal" />
-              <img src="./img/catalog-card/buckwheat1000-mob.png" alt="гречка" width="140" height="107"
-                class="normal" />
-              <img src="./img/catalog-card/buckwheat1000-mob-x2.png" alt="гречка" width="140" height="107"
-                class="retina" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/buckwheat1000-desk.webp 1x, ./img/catalog-card/buckwheat1000-desk-x2.webp 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/buckwheat1000-tab.webp 1x, ./img/catalog-card/buckwheat1000-tab-x2.webp 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/buckwheat1000-mob.webp 1x, ./img/catalog-card/buckwheat1000-mob-x2.webp 2x"
+                width="140" height="107" />
+              <source
+                srcset="./img/catalog-card/buckwheat1000-desk.png 1x, ./img/catalog-card/buckwheat1000-desk-x2.png 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source
+                srcset="./img/catalog-card/buckwheat1000-tab.png 1x, ./img/catalog-card/buckwheat1000-tab-x2.png 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <img src="./img/catalog-card/buckwheat1000-mob.png"
+                srcset="./img/catalog-card/buckwheat1000-mob-x2.png 2x" alt="гречка" width="140" height="107" />
             </picture>
           </div>
           <div class="card__info">
@@ -323,28 +281,21 @@
         <li class="catalog__card card">
           <div class="card__picture">
             <picture>
-              <source type="image/webp" srcset="./img/catalog-card/rice500-desk-x2.webp" media="(min-width: 1440px)"
-                width="169" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/rice500-desk.webp" media="(min-width: 1440px)"
-                width="169" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/rice500-tab-x2.webp" media="(min-width: 768px)"
-                width="200" height="210" class="retina" />
-              <source type="image/webp" srcset="./img/catalog-card/rice500-tab.webp" media="(min-width: 768px)"
-                width="200" height="210" class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/rice500-mob.webp" alt="рыба" width="140" height="107"
-                class="normal" />
-              <source type="image/webp" srcset="./img/catalog-card/rice500-mob-x2.webp" alt="рыба" width="140"
-                height="107" class="retina" />
-              <source srcset="./img/catalog-card/rice500-desk-x2.png" media="(min-width: 1440px)" width="169"
-                height="210" class="retina" />
-              <source srcset="./img/catalog-card/rice500-desk.png" media="(min-width: 1440px)" width="169" height="210"
-                class="normal" />
-              <source srcset="./img/catalog-card/rice500-tab-x2.png" media="(min-width: 768px)" width="200" height="210"
-                class="retina" />
-              <source srcset="./img/catalog-card/rice500-tab.png" media="(min-width: 768px)" width="200" height="210"
-                class="normal" />
-              <img src="./img/catalog-card/rice500-mob.png" alt="рис" width="140" height="107" class="normal" />
-              <img src="./img/catalog-card/rice500-mob-x2.png" alt="рис" width="140" height="107" class="retina" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/rice500-desk.webp 1x, ./img/catalog-card/rice500-desk-x2.webp 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/rice500-tab.webp 1x, ./img/catalog-card/rice500-tab-x2.webp 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <source type="image/webp"
+                srcset="./img/catalog-card/rice500-mob.webp 1x, ./img/catalog-card/rice500-mob-x2.webp 2x" width="140"
+                height="107" />
+              <source srcset="./img/catalog-card/rice500-desk.png 1x, ./img/catalog-card/rice500-desk-x2.png 2x"
+                media="(min-width: 1440px)" width="169" height="210" />
+              <source srcset="./img/catalog-card/rice500-tab.png 1x, ./img/catalog-card/rice500-tab-x2.png 2x"
+                media="(min-width: 768px)" width="200" height="210" />
+              <img src="./img/catalog-card/rice500-mob.png" srcset="./img/catalog-card/rice500-mob-x2.png 2x" alt="рис"
+                width="140" height="107" />
             </picture>
           </div>
           <div class="card__info">
@@ -364,7 +315,7 @@
               </li>
             </ul>
           </div>
-          <a href="" class="button-link card__link">Заказать</a>
+          <a href="#" class="button-link card__link">Заказать</a>
         </li>
         <li class="catalog__card card">
           <div class="card__info card__info--more">
@@ -376,42 +327,42 @@
       </ul>
     </section>
     <section class="catalog__extend extend">
-      <h1 class="extend__title special-title">
+      <h2 class="extend__title special-title">
         <span class="special-title__block"><span class="special-title__text">Дополнительные товары</span></span>
-      </h1>
+      </h2>
       <div class="extend__block">
-        <ul class="catalog__list catalog__list--extend">
+        <ul class="extend__list">
           <li class="extend__card">
-            <h2 class="card__title card__title--extend">Сахарозаменитель</h2>
-            <div class="card__text card__item--extend">
-              <p class="card__text card__text--extend card__text--left">1 упаковка (100 г)</p>
-              <p class="card__text card__text--extend card__text--right">200 ₽</p>
+            <h2 class="extend__card-title">Сахарозаменитель</h2>
+            <div class="extend__card-text extend__card-item">
+              <p class="extend__card-text extend__card-text--left">1 упаковка (100 г)</p>
+              <p class="extend__card-text extend__card-text--right">200 ₽</p>
             </div>
-            <a href="" class="button-link card__link card__link--extend">Заказать</a>
+            <a href="" class="button-link extend__card-link">Заказать</a>
           </li>
           <li class="extend__card">
-            <h2 class="card__title card__title--extend">питьевая вода</h2>
-            <div class="card__text card__item--extend">
-              <p class="card__text card__text--extend card__text--left">5 литров</p>
-              <p class="card__text card__text--extend card__text--right">50 ₽</p>
+            <h2 class="extend__card-title">питьевая вода</h2>
+            <div class="extend__card-text extend__card-item">
+              <p class="extend__card-text extend__card-text--left">5 литров</p>
+              <p class="extend__card-text extend__card-text--right">50 ₽</p>
             </div>
-            <a href="" class="button-link card__link card__link--extend">Заказать</a>
+            <a href="" class="button-link extend__card-link">Заказать</a>
           </li>
           <li class="extend__card">
-            <h2 class="card__title card__title--extend">молоко</h2>
-            <div class="card__text card__item--extend">
-              <p class="card__text card__text--extend card__text--left">1 литр</p>
-              <p class="card__text card__text--extend card__text--right">100 ₽</p>
+            <h2 class="extend__card-title">молоко</h2>
+            <div class="extend__card-text extend__card-item">
+              <p class="extend__card-text extend__card-text--left">1 литр</p>
+              <p class="extend__card-text extend__card-text--right">100 ₽</p>
             </div>
-            <a href="" class="button-link card__link card__link--extend">Заказать</a>
+            <a href="" class="button-link extend__card-link">Заказать</a>
           </li>
           <li class="extend__card">
-            <h2 class="card__title card__title--extend">витамины</h2>
-            <div class="card__text card__item--extend">
-              <p class="card__text card__text--extend card__text--left">1 упаковка (30 г)</p>
-              <p class="card__text card__text--extend card__text--right">300 ₽</p>
+            <h2 class="extend__card-title">витамины</h2>
+            <div class="extend__card-text extend__card-item">
+              <p class="extend__card-text extend__card-text--left">1 упаковка (30 г)</p>
+              <p class="extend__card-text extend__card-text--right">300 ₽</p>
             </div>
-            <a href="" class="button-link card__link card__link--extend">Заказать</a>
+            <a href="" class="button-link extend__card-link">Заказать</a>
           </li>
         </ul>
         <div class="catalog__gift gift">
@@ -453,6 +404,7 @@
       </div>
     </section>
     <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
       <a href="#" class="contacts__logo">
         <picture><img src="./img/icons/logo-page.svg" alt="Логотип Cat-Energy" width="128" height="24" /></picture>
       </a>
