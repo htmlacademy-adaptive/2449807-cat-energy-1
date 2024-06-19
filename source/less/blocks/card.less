@@ -6,9 +6,19 @@
 }
 
 .card__picture {
+  display: block;
   width: 140px;
   height: 107px;
   margin-bottom: 17px;
+}
+
+.card__picture:hover {
+  opacity: 0.8;
+}
+
+.card__picture:focus {
+  opacity: 0.7;
+  outline: none;
 }
 
 .card__info {
@@ -16,16 +26,27 @@
 }
 
 .card__title {
+  display: block;
+  text-decoration: none;
   margin: 0;
   padding: 0;
   padding-right: 45px;
   color: #222222;
-  font-family: @oswald-r;
+  font-family: @oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
+
+.card__title:hover {
+  opacity: 0.8;
+}
+
+.card__title:focus {
+  opacity: 0.7;
+  outline: none;
 }
 
 .card__list {
@@ -40,7 +61,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   color: #444444;
-  font-family: @lato-r;
+  font-family: @lato;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -61,6 +82,7 @@
 }
 
 .card__title--more {
+  color: #111111;
   padding: 0;
   margin: 0 auto;
   text-align: center;
@@ -208,14 +230,14 @@
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
   }
 
   .card__list {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   .card__text {

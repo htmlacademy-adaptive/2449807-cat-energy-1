@@ -14,22 +14,22 @@
   <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="stylesheet" href="./css/style.min.css"/>
 </head>
 
 <body class="body">
   <header class="header">
     <a href="index.html" class="header__link">
       <picture>
-        <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)" width="202" height="59" />
-        <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" width="174" height="50" />
-        <img class="header__logo" src="./img/icons/logo-mobile.svg" alt="Логотип сайта" width="33" height="38" />
+        <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)" width="202" height="59"/>
+        <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" width="174" height="50"/>
+        <img class="header__logo" src="./img/icons/logo-mobile.svg" alt="Логотип сайта" width="33" height="38"/>
       </picture>
     </a>
     <nav class="nav">
       <ul class="nav__menu menu">
         <li class="menu__item">
-          <a href="index.html" class="menu__link">главная</a>
+          <a href="index.html" class="menu__link menu__link--current">главная</a>
         </li>
         <li class="menu__item">
           <a href="catalog.html" class="menu__link">каталог продукции</a>
@@ -45,9 +45,6 @@
   </header>
   <main class="main">
     <section class="main__welcome-block welcome">
-      <div class="welcome__background">
-        <span class="visually-hidden">Кот-десктоп</span>
-      </div>
       <div class="welcome__desktop-container">
         <div class="welcome__wrapper">
           <div class="welcome__container">
@@ -154,9 +151,6 @@
             <button class="slider__control" type="button">
               <span class="visually-hidden">показать следующий слайд</span>
             </button>
-            <span class="slider__stick">
-              <span class="visually-hidden">Контроль слайда</span>
-            </span>
           </div>
         </div>
       </div>
