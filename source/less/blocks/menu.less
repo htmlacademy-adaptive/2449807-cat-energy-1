@@ -9,7 +9,7 @@
   display: block;
   text-decoration: none;
   color: #000000;
-  font-family: @oswald-r;
+  font-family: @oswald;
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
@@ -54,13 +54,13 @@
 
   .menu__link {
     border-bottom: 2px solid transparent;
-    font-family: @oswald-r;
+    font-family: @oswald;
     font-size: 18px;
     line-height: 24px;
     padding: 15px 0 7px 0;
   }
 
-  .menu__link:active {
+  .menu__link--current {
     border-bottom: 2px solid #68b738;
   }
 }
@@ -83,22 +83,22 @@
   .menu__link {
     border-bottom: 2px solid transparent;
     color: #ffffff;
-    font-family: @oswald-r;
+    font-family: @oswald;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     padding: 16px 0 5px 0;
   }
 
-  .menu__link:active {
-    border-bottom: 2px solid #ffffff;
-  }
-
   .menu__link--dark {
     color: #000000;
   }
 
-  .menu__link--dark:active {
+  .menu__link--current {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .menu__link--dark-current {
     border-bottom: 2px solid #68b738;
   }
 }
